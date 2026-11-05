@@ -8,3 +8,7 @@ export function usersQuery(): Promise<User[]> {
   users ??= fetchUsers()
   return users
 }
+
+export function resetUsersQuery(): void {
+  users = undefined
+}
