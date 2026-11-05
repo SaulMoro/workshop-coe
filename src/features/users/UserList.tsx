@@ -1,8 +1,9 @@
-import { useUsers } from './useUsers'
+import { use } from 'react'
+import { usersQuery } from './usersQuery'
 import type { User } from './types'
 
 export function UserList() {
-  const users = useUsers()
+  const users = use(usersQuery())
 
   return (
     <ul className="divide-y divide-rule border border-rule bg-surface">
