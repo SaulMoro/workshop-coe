@@ -1,4 +1,5 @@
 import { use } from 'react'
+import { EmptyState } from '../../shared/ui/EmptyState'
 import { ordersQuery } from './ordersQuery'
 import type { Order, OrderStatus } from './types'
 
@@ -12,7 +13,10 @@ const statusStyle: Record<OrderStatus, string> = {
 const money = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' })
 
 export function OrderList() {
-  const orders = use(ordersQuery())
+  const orders = [...use(ordersQuery())].sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+  if (orders.length === 0) {
+    return <EmptyState title="Todavía no hay pedidos" hint="Aparecerán aquí en cuanto un cliente haga uno." />
+  }
 
   return (
     <ul className="divide-y divide-rule border border-rule bg-surface">
