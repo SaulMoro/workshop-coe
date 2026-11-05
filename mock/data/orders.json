@@ -1,0 +1,8 @@
+[
+  { "id": "o-1042", "customer": "Talleres Ruiz", "total": 1240.5, "status": "pagado", "createdAt": "2026-10-28" },
+  { "id": "o-1043", "customer": "Librería Alba", "total": 89.9, "status": "pendiente", "createdAt": "2026-10-29" },
+  { "id": "o-1044", "customer": "Clínica Sol", "total": 560, "status": "enviado", "createdAt": "2026-10-30" },
+  { "id": "o-1045", "customer": "Bodegas Peña", "total": 2310.75, "status": "pagado", "createdAt": "2026-10-31" },
+  { "id": "o-1046", "customer": "Estudio Marea", "total": 145, "status": "cancelado", "createdAt": "2026-11-01" },
+  { "id": "o-1047", "customer": "Ferretería Oeste", "total": 412.3, "status": "pendiente", "createdAt": "2026-11-02" }
+]

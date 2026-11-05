@@ -1,0 +1,10 @@
+{
+  // Solo las skills del proyecto: oculta las personales para que el taller salga igual en todos los equipos.
+  "chat.agentSkillsLocations": {
+    "~/.agents/skills": false,
+    "~/.copilot/skills": false,
+    "~/.claude/skills": false
+  },
+  // Sin Copilot Memory: que no recuerde datos del repositorio ni preferencias entre intentos del taller.
+  "chat.copilot.memory.enabled": false
+}

@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* Tokens del sistema de diseño AI CoE (los mismos que las diapositivas) */
+@theme {
+  --color-paper: #fbf8f2;
+  --color-surface: #ffffff;
+  --color-sunken: #edeae3;
+  --color-ink: #121419;
+  --color-ink-2: #5f6873;
+  --color-ink-3: #8a8f96;
+  --color-rule: #dcd8d0;
+  --color-night: #0a0b0e;
+
+  --color-magenta: #d61c4e;
+  --color-orange: #f77e21;
+  --color-yellow: #fac213;
+  --color-blue: #2b7bb9;
+  --color-accent: #1f6399;
+
+  --font-display: "Inter", "IBM Plex Sans", "Trebuchet MS", sans-serif;
+  --font-sans: "IBM Plex Sans", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", Consolas, monospace;
+
+  --radius-xs: 2px;
+}
+
+@layer base {
+  html {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+  body {
+    @apply min-h-dvh;
+  }
+  ::selection {
+    @apply bg-yellow/60;
+  }
+}
+
+/* Etiqueta en mayúsculas espaciadas, como el kicker de las diapositivas */
+@utility label {
+  @apply font-mono text-xs font-medium uppercase tracking-[0.14em] text-ink-2;
+}

@@ -1,0 +1,10 @@
+[
+  { "id": "u1", "name": "Lucía Romero", "email": "lucia.romero@example.com", "role": "Tech lead", "team": "Pagos" },
+  { "id": "u2", "name": "Marcos Vidal", "email": "marcos.vidal@example.com", "role": "Front", "team": "Pagos" },
+  { "id": "u3", "name": "Ana Beltrán", "email": "ana.beltran@example.com", "role": "Back", "team": "Catálogo" },
+  { "id": "u4", "name": "Jorge Ibarra", "email": "jorge.ibarra@example.com", "role": "QA", "team": "Catálogo" },
+  { "id": "u5", "name": "Noa Ferrer", "email": "noa.ferrer@example.com", "role": "Front", "team": "Clientes" },
+  { "id": "u6", "name": "Pablo Sanz", "email": "pablo.sanz@example.com", "role": "Datos", "team": "Clientes" },
+  { "id": "u7", "name": "Irene Molina", "email": "irene.molina@example.com", "role": "Back", "team": "Pagos" },
+  { "id": "u8", "name": "Hugo Navarro", "email": "hugo.navarro@example.com", "role": "Diseño", "team": "Clientes" }
+]
