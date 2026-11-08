@@ -12,14 +12,17 @@ const statusStyle: Record<OrderStatus, string> = {
 const money = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR' })
 
 export function OrderList() {
-  const orders = use(ordersQuery())
+  const orders = [...use(ordersQuery())].sort((a, b) => b.createdAt.localeCompare(a.createdAt))
 
   return (
-    <ul className="divide-y divide-rule border border-rule bg-surface">
-      {orders.map((order) => (
-        <OrderRow key={order.id} order={order} />
-      ))}
-    </ul>
+    <>
+      <p className="sr-only" aria-live="polite">{orders.length} pedidos</p>
+      <ul aria-label="Pedidos" className="divide-y divide-rule border border-rule bg-surface">
+        {orders.map((order) => (
+          <OrderRow key={order.id} order={order} />
+        ))}
+      </ul>
+    </>
   )
 }
 
