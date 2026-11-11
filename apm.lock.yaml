@@ -73,7 +73,7 @@ dependencies:
   marketplace_plugin_name: front-react
   constraint: ^1.0.0
   resolved_tag: front-react--v1.1.0
-  resolved_at: '2026-11-11T13:25:40+00:00'
+  resolved_at: '2026-11-11T13:25:48+00:00'
 - repo_url: saulmoro/workshop-coe-cdn
   name: common
   host: github.com
@@ -96,7 +96,7 @@ dependencies:
   content_hash: sha256:1fbb34dd18e99e190c85e052a37d64d38a83b196c99fd6026fbb2c7e52c189fc
   constraint: ^1.0.0
   resolved_tag: common--v1.0.0
-  resolved_at: '2026-11-11T13:25:40+00:00'
+  resolved_at: '2026-11-11T13:25:48+00:00'
 deployments:
 - kind: project-relative
   target: copilot
@@ -388,6 +388,15 @@ deployments:
   content_hash: sha256:825b55c90373bd1fb719511e35cd3c2f42bc311c88c80f666778489a3d2f4c1a
 - kind: project-relative
   target: copilot
+  value: .github/instructions/proyecto.instructions.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:007175d47ce4ebaa69472e637127149423c6d4d24588b5d0e5309437fc47e206
+- kind: project-relative
+  target: copilot
   value: .github/instructions/react-components.instructions.md
   runtime: null
   scope: project
@@ -404,3 +413,7 @@ deployments:
   - saulmoro/workshop-coe-cdn/packages/front-react
   active_owner: saulmoro/workshop-coe-cdn/packages/front-react
   content_hash: sha256:d827e36e53941d99125d584dcdb61ff1f257daa4540a8a087bd1602f3028eb01
+local_deployed_files:
+- .github/instructions/proyecto.instructions.md
+local_deployed_file_hashes:
+  .github/instructions/proyecto.instructions.md: sha256:007175d47ce4ebaa69472e637127149423c6d4d24588b5d0e5309437fc47e206
